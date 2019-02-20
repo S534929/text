@@ -39,10 +39,10 @@
   <script>
     console.log('SCRIPT START')
     console.log('Declare testable functions.....................')
-    function add(x, y) {
-      return x + y
+    function sub(x, y) {
+      return x - y
     }
-    console.log('Defined add=' + add)
+    console.log('Defined add=' + sub)
     console.log('Declare event listeners .......................')
     document.getElementById('clicker').addEventListener('click', function () {
       const s = document.getElementById('guest').value
@@ -50,7 +50,7 @@
       console.log('i=' + i)
       const j = parseInt(document.getElementById('secondNumber').value)
       console.log('j=' + j)
-      const ans = s + ', your sum is ' + add(i, j) + '.'
+      const ans = s + ', your sum is ' + sub(i, j) + '.'
       document.getElementById('result').innerHTML = ans
     })
     console.log('SCRIPT END')
